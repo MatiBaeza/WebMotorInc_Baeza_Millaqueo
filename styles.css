@@ -1,0 +1,39 @@
+header{
+    font-family: Raleway-Bold;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    
+}
+
+.contenedor{
+    display: flex;
+}
+
+.imagen{
+    width: 350px;
+    margin-right: 40px;
+}
+.texto{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+@media(max-width:858px){
+    .contenedor{
+        font-size: 15px;
+        flex-direction: column;
+        padding: 10px 0;
+        
+    }
+    .imagen{
+        flex-direction: column;
+        width: 100%;
+    }
+    .copy{
+        font-size: 15px;
+        
+    }
+
+}
