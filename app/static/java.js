@@ -8,6 +8,19 @@ const textarea = document.getElementById("textarea")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
+(function () {
+    const btnEliminacion=document.querySelectorAll(".btnEliminacion");
+    btnEliminacion.forEach(btn=> {
+        btn.addEventListener('click', (e)=>{
+            const confirmacion=confirm('¿Seguro de eliminar el Paquete?');
+            if(!confirmacion){
+                e.preventDefault();
+            }
+        });
+    });
+})();
+
+
 form.addEventListener("submit", e=>{
     e.preventDefault()
     let warnings = ""
